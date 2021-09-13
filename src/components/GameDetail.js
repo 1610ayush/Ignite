@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 //Redux
 import { useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
-import { smallImage } from "../util";
 //IMAGES
 import playstation from "../img/playstation.svg";
 import steam from "../img/steam.svg";
