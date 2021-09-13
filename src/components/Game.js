@@ -1,16 +1,16 @@
 import React from "react";
-//Styling and Animations
+//Styling and Animation
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { popup } from "../animations";
 //Redux
 import { useDispatch } from "react-redux";
 import { loadDetail } from "../actions/detailAction";
 import { Link } from "react-router-dom";
 import { smallImage } from "../util";
+import { popup } from "../animations";
 
 const Game = ({ name, released, image, id }) => {
-  const stringPathID = id.toString();
+  const stringPathId = id.toString();
   //Load Detail Handler
   const dispatch = useDispatch();
   const loadDetailHandler = () => {
@@ -23,17 +23,13 @@ const Game = ({ name, released, image, id }) => {
       variants={popup}
       initial="hidden"
       animate="show"
-      layoutId={stringPathID}
+      layoutId={stringPathId}
       onClick={loadDetailHandler}
     >
       <Link to={`/game/${id}`}>
-        <motion.h3 layoutId={`title ${stringPathID}`}>{name}</motion.h3>
+        <motion.h3 layoutId={`title ${stringPathId}`}>{name}</motion.h3>
         <p>{released}</p>
-        <motion.img
-          layoutId={`image ${stringPathID}`}
-          src={smallImage(image, 640)}
-          alt={name}
-        />
+        <motion.img layoutId={`image ${stringPathId}`} src={image} alt={name} />
       </Link>
     </StyledGame>
   );
@@ -41,7 +37,7 @@ const Game = ({ name, released, image, id }) => {
 
 const StyledGame = styled(motion.div)`
   min-height: 30vh;
-  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
   text-align: center;
   border-radius: 1rem;
   cursor: pointer;
