@@ -2,6 +2,9 @@
 
 The React Ignite App is a dynamic and engaging web application that fetches data about upcoming games, popular games, and new games from the RAWG API and renders comprehensive information about each game. With a user-friendly interface, the app provides game details such as ratings, platforms on which the game is released, descriptions, and captivating photos. State management is handled efficiently using Redux, and the app also incorporates a search functionality for seamless navigation.
 
+Deployed on - https://1610ayush.github.io/Ignite/
+
+
 ## Features
 
 - **Upcoming Games:** View a list of upcoming games, complete with detailed information and captivating images.
@@ -21,10 +24,6 @@ The React Ignite App is built with the following technologies:
 - Redux: State management tool to efficiently manage application state.
 
 - RAWG API: API for fetching comprehensive game data, including upcoming, popular, and new games.
-
-## Deployment
-
-The React Ignite App is deployed on GitHub Pages and can be accessed using the following link: [React Ignite App Deployment]([https://1610ayush.github.io/](https://1610ayush.github.io/Ignite/))
 
 ## Getting Started
 
