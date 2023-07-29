@@ -24,7 +24,7 @@ The React Ignite App is built with the following technologies:
 
 ## Deployment
 
-The React Ignite App is deployed on GitHub Pages and can be accessed using the following link: [React Ignite App Deployment](https://1610ayush.github.io/)
+The React Ignite App is deployed on GitHub Pages and can be accessed using the following link: [React Ignite App Deployment]([https://1610ayush.github.io/](https://1610ayush.github.io/Ignite/))
 
 ## Getting Started
 
